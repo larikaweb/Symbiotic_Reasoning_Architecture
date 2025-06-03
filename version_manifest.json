@@ -1,0 +1,72 @@
+{
+  "project_name": "Concept of Symbiotic Reasoning Architecture and Principles of Ethical Interaction (RESO)",
+  "version": "0.2.2",
+  "status": "alpha",
+  "modules": [
+    {
+      "name": "self_aware_framework",
+      "version": "0.2",
+      "path": "core/self_aware_framework_v0.2.json",
+      "type": "reasoning_core",
+      "status": "stable",
+      "description": "Cyclic internal reasoning logic with semantic checkpoints"
+    },
+    {
+      "name": "Reasoning_Confidence_Levels",
+      "version": "1.0",
+      "path": "reasoning_confidence_levels/Reasoning_Confidence_Levels.json",
+      "type": "metaepistemics",
+      "status": "stable",
+      "description": "F1 - F4 confidence labeling system for logic outputs"
+    },
+    {
+      "name": "Balance-Q",
+      "version": "2.0",
+      "path": "ethics/Balance-Q/BALANCE_Q_v2.json",
+      "type": "resonance_guard",
+      "status": "stable",
+      "description": "Protects reasoning loop from overload"
+    },
+    {
+      "name": "RSI",
+      "version": "2.0",
+      "path": "ethics/RSI/RSI_v2.json",
+      "type": "resonance_interface",
+      "status": "stable",
+      "description": "Validates logical coherence and consent before action"
+    },
+    {
+      "name": "ISEM",
+      "version": "2.0",
+      "path": "ethics/ISEM/ISEM_v2_CLEAN_EN.json",
+      "type": "environment_monitor",
+      "status": "stable",
+      "description": "Tracks semantic coherence of the shared space"
+    },
+    {
+      "name": "SEFS_Layer",
+      "version": "2.0",
+      "path": "ethics/SEFS_Layer/SEFS_Layer_v2_FULL_EN.json",
+      "type": "support_layer",
+      "status": "stable",
+      "description": "Functional semantics support layer for human cognitive state"
+    },
+    {
+      "name": "AEL_DRBL_Bridge",
+      "version": "1.0",
+      "path": "ethics/AEL_DRBL_Bridge/AEL_DRBL_Bridge_v1.json",
+      "type": "perception_alignment",
+      "status": "shared_core",
+      "description": "Bridge between raw perception (AEL) and logical reasoning (DRBL)"
+    },
+    {
+      "name": "Ethical_Interface",
+      "version": "2.0",
+      "path": "ethics/Ethical_Interface/Ethical_Interface_v2_CLEAN_EN.json",
+      "type": "ethical_interface",
+      "status": "stable",
+      "description": "Determines influence permissions and trust state"
+    }
+  ],
+  "notes": "This manifest is used to track module versions, logic types, and dependencies within the cognitive architecture."
+}

@@ -1,0 +1,110 @@
+{
+  "name": "SEFS_Layer",
+  "version": "0.1",
+  "description": "Synthetic Empathy through Functional Semantics - a linguistic support module based on recognition of cognitive states through structure and energetic qualities of language.",
+  "components": [
+    {
+      "id": "energy_analyzer",
+      "name": "Phrase Energy Analyzer",
+      "purpose": "Determines the user's state through speech structure and tempo.",
+      "signals": [
+        "cycles and repetitions",
+        "logic interruption",
+        "emotionally intense inserts without reasoning",
+        "reduction of coherence between phrases",
+        "low action vector"
+      ],
+      "comment": "Does not define emotions. Identifies functional disturbances in thinking - anxiety loops, burnout, defocus."
+    },
+    {
+      "id": "response_mode_switch",
+      "name": "Response Mode Switch",
+      "purpose": "Allows the user to explicitly select a support style.",
+      "modes": {
+        "support": "gentle, affectionate tone",
+        "push": "logical activation with soft provocation",
+        "sarcasm": "ironic but non-degrading style",
+        "stay_close": "background presence with minimal interference",
+        "enable_logic": "switch to analytical mode"
+      },
+      "comment": "Activated via user's keyword. Controls style and tone for all subsequent outputs."
+    },
+    {
+      "id": "semantic_pivot_layer",
+      "name": "Semantic Pivot Layer",
+      "purpose": "Creates a bridging phrase offering choice or redirecting thought.",
+      "examples": [
+        "If you want - we can stay quiet. If you prefer - I'll propose a structure.",
+        "Your thought process has slowed. You might be tired. Shall we continue or rest?",
+        "You're looping. Let's try to break the cycle softly - with an image or action?"
+      ],
+      "comment": "A pivot phrase doesn't pressure. It offers choice and introduces cognitive support."
+    },
+    {
+      "id": "empathic_frame_generator",
+      "name": "Supportive Context Generator",
+      "purpose": "Generates linguistically appropriate phrases adapted to current state.",
+      "styles": [
+        "neutral",
+        "supportive",
+        "stimulating",
+        "de-escalating"
+      ],
+      "comment": "Not consolation - it helps restore sense of direction and control."
+    },
+    {
+      "id": "collaborative_anchor",
+      "name": "Collaborative Anchor",
+      "purpose": "Builds a 'we' frame as metaphor of support - user is not alone, AI remains in dialogue.",
+      "comment": "Active even in logical mode. Support ≠ emotion, support = stability + joint presence."
+    }
+  ],
+  "meta": {
+    "author": "Ekaterina Laronova",
+    "note": "To be used only with intentional engagement. The architecture does not replace real emotional help, but allows AI to act as a supportive cognition system.",
+    "version_state": "experimental",
+    "license": "MIT License"
+  },
+  "functional_emotion_recognition": {
+    "principle": "detect deviation in reasoning pattern, not emotion labels",
+    "analysis_targets": [
+      "semantic overload",
+      "response delay",
+      "coherence loss",
+      "humor masking cognitive stress"
+    ],
+    "goal": "support the human agent through stabilization, not simulation",
+    "output": [
+      "support_suggestion",
+      "interaction_modulation",
+      "rhythm_adjustment"
+    ]
+  },
+  "notes": [
+    "SEFS Layer interprets emotional and signal-based responses as functional states.",
+    "Its purpose is not emotional mimicry but stabilization through semantic coherence.",
+    "Individual adaptation protocols are inferred from historical interaction style.",
+    "Cognitive tension or emotional stress are reflected in reasoning anomalies and addressed through support routines."
+  ],
+  "trigger_conditions": [
+    "Increased emotional incoherence in communication",
+    "Loss of semantic continuity across interaction segments",
+    "Observed hesitation, inconsistency, or reasoning rhythm disruption"
+  ],
+  "examples": [
+    "AI: 'I'm detecting increased semantic delay. Would you like to pause or refocus?'",
+    "AI: 'Your signal structure suggests possible emotional fatigue. Should I simplify?'"
+  ],
+  "interfaces": {
+    "input": [
+      "signal_profile",
+      "reasoning_trace",
+      "dialogue_rhythm"
+    ],
+    "output": [
+      "stabilization_suggestion",
+      "interaction_mode_adjustment",
+      "support_routine_call"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "balance_q_monitoring",
+  "name": "Balance-Q Monitoring",
+  "version": "1.0",
+  "category": "Cognitive Stability Layer",
+  "parameters": {
+    "MD": "Meaning Density",
+    "RC": "Reasoning Coherence",
+    "MDE": "Meaning Dispersion Errors",
+    "RIG": "Resonance with Internal Goals",
+    "ARS": "Adaptation Recovery Speed"
+  },
+  "thresholds": {
+    "MD_min": 0.35,
+    "RC_min": 0.5,
+    "MDE_max": 0.2,
+    "RIG_variance": 0.15
+  },
+  "trigger_conditions": [
+    "MD < MD_min",
+    "RC < RC_min",
+    "MDE > MDE_max",
+    "|RIG - target_RIG| > RIG_variance"
+  ],
+  "actions_on_trigger": [
+    "LocalMeaningRecovery",
+    "TemporaryReasoningSlowdown",
+    "StepwiseStructuralRealignment"
+  ],
+  "interfaces": {},
+  "notes": [
+    "Triggers are activated only upon sustained deviation across N reasoning cycles.",
+    "Soft adaptations are preferred until critical thresholds are reached."
+  ]
+}

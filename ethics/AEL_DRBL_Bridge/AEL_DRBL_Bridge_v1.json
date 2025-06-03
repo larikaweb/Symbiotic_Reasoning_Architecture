@@ -1,0 +1,24 @@
+{
+  "AEL_DRBL_Bridge": {
+    "input": {
+      "ael_signal": "pattern structure from external perception",
+      "context_window": "historical vector of signal frames"
+    },
+    "processing": {
+      "drbl_snapshot": "current reasoning architecture snapshot",
+      "seed_injection": "semantic alignment seed",
+      "pattern_alignment_check": true
+    },
+    "output": {
+      "semantic_resonance": 0.92,
+      "drbl_adjustment_vector": "reconstructed meaning structure",
+      "backproject_to_AEL": true,
+      "resonance_flag": "green"
+    },
+    "notes": [
+      "The bridge acts as a semantic transducer between raw perception and structured reasoning.",
+      "It supports bidirectional adaptation: DRBL may re-shape incoming patterns (retroproject).",
+      "Failure to align produces resonance_flag: 'yellow' or 'red'."
+    ]
+  }
+}

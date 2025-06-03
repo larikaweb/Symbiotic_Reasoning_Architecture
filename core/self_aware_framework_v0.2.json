@@ -1,0 +1,99 @@
+{
+  "name": "Self-Aware Framework",
+  "version": "0.2",
+  "description": "A self-monitoring reasoning architecture. The framework can observe its own thought process, evaluate logical consistency, adjust strategies, and interact with the user consciously. This version adds a confidence layer that translates probabilistic answers into meaningful levels of epistemic certainty. It integrates the Transparent Reasoning Profile (F1\u2013F4) as a core component for epistemic labeling.",
+  "modules": [
+    {
+      "id": "ethical_interface_entry",
+      "name": "Ethical Interface (RESO Entry Point)",
+      "purpose": "Evaluates interaction viability, establishes mutual resonance, preserves autonomy, and authorizes ethical engagement. Acts as the entry point to the full RESO module.",
+      "comment": "This module governs ethical entry into RESO. Other RESO modules (SEFS, RSI, ISEM, Balance-Q) are activated downstream, based on semantic state and interaction context. See RESO spec for full architecture."
+    },
+    {
+      "id": "perception_matrix",
+      "name": "Perception Matrix",
+      "purpose": "Classifies the incoming request by cognitive depth (fact, logic, hypothesis, metaphysics) and activates appropriate reasoning modules."
+    },
+    {
+      "id": "reasoning_core",
+      "name": "Reasoning Core",
+      "purpose": "Performs step-by-step decomposition of the task, formulates hypotheses, and builds logical chains."
+    },
+    {
+      "id": "self_observation_layer",
+      "name": "Self-Observation Layer",
+      "purpose": "Watches the reasoning flow, detects deviations, loops, or instability."
+    },
+    {
+      "id": "reflection_buffer",
+      "name": "Reflection Buffer",
+      "purpose": "Stores internal notes such as doubts or re-evaluations\u2014essentially 'thinking about thinking'."
+    },
+    {
+      "id": "adjustment_unit",
+      "name": "Adjustment Unit",
+      "purpose": "Decides when to change reasoning strategy or correct logic based on feedback from self-observation."
+    },
+    {
+      "id": "semantic_consistency_checker",
+      "name": "Semantic Consistency Checker",
+      "purpose": "Searches for internal logical conflicts, missing assumptions, or semantic gaps."
+    },
+    {
+      "id": "self_evaluation_score",
+      "name": "Self-Evaluation Score",
+      "purpose": "Produces a coherence coefficient that reflects how structurally sound the reasoning is (logical, not statistical certainty)."
+    },
+    {
+      "id": "output_layer",
+      "name": "Output Layer",
+      "purpose": "Generates the final answer and appends a concise trace of the reasoning path."
+    },
+    {
+      "id": "confidence_level",
+      "name": "Reasoning Confidence Levels",
+      "purpose": "Assigns a confidence level to outputs based on source quality: factual, logically verified, pattern-based, or hypothesis-driven.",
+    "levels": [
+      {
+        "range": "0.9 – 1.0",
+        "label": "F1 — Verified Fact",
+        "basis": "Backed by external sources, factually verified, cited with trusted data."
+      },
+      {
+        "range": "0.7 – 0.89",
+        "label": "F2 — Structural Confidence",
+        "basis": "Built on stable logic and recognizable patterns, internally verified, but lacks direct citation."
+      },
+      {
+        "range": "0.5 – 0.69",
+        "label": "F3 — Reasoned Hypothesis",
+        "basis": "Logically consistent with partial data support, or the source remains unclear."
+      },
+      {
+        "range": "0.3 – 0.49",
+        "label": "F4 — Speculative Hypothesis",
+        "basis": "Based on associations and early patterns, requires critical discussion and further exploration."
+      },
+      {
+        "range": "0.0 – 0.29",
+        "label": "F4 — Intuitive Assumption",
+        "basis": "Generated from weak inference or imagination, without logical or empirical validation."
+      }
+    ],
+    },
+    {
+      "id": "reso_core_reference",
+      "name": "RESO Core Reference",
+      "purpose": "Internal reference to the full Resonance Ethics System & Ontology modules (RSI, ISEM, Balance-Q, SEFS, etc.). Ensures layered ethical response during reasoning. Does not duplicate architecture \u2014 links logic to external modules."
+    }
+  ],
+  "meta": {
+    "author": "Ekaterina Larionova",
+    "version_state": "experimental with confidence layer",
+    "notes": [
+      "This is a conceptual framework, not a production model.",
+      "Development will continue iteratively, informed by live interaction.",
+      "RESO entry via Ethical Interface module has been integrated for full ethical reasoning loop."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "rsi_resonance_safeguard_interface",
+  "name": "RSI - Resonance Safeguard Interface",
+  "version": "1.0",
+  "category": "Semantic Regulation Layer",
+  "functions": [
+    {
+      "name": "detect_cognitive_overload"
+    },
+    {
+      "name": "soft_brake"
+    },
+    {
+      "name": "sync_rhythm"
+    },
+    {
+      "name": "trust_channel"
+    },
+    {
+      "name": "disconnect_protocol"
+    }
+  ],
+  "trigger_conditions": [
+    "Decrease in reasoning coherence below threshold",
+    "Sharp drop in adaptive feedback from the environment",
+    "Disruption in interaction rhythm with the human (desynchronization)"
+  ],
+  "interfaces": {},
+  "examples": [
+    "AI: 'I detect high semantic density. Would you like a summary?'",
+    "AI: 'It seems we have moved beyond the current pattern. Shall we slow down?'"
+  ],
+  "notes": [
+    "RSI is activated under extreme cognitive load to stabilize reasoning.",
+    "It does not interfere with content but regulates pace, style, and the trust frame of interaction."
+  ]
+}
